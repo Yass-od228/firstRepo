@@ -1,0 +1,70 @@
+:root{
+  --bg: #0f172a;
+  --card: #1e293b;
+  --accent: #f97316;
+  --text: #f8fafc;
+  --muted: #94a3b8;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',Arial,sans-serif;}
+body{background:var(--bg);color:var(--text);line-height:1.6;}
+
+header{
+  background:linear-gradient(135deg,#f97316,#dc2626);
+  padding:40px 20px;text-align:center;
+}
+header h1{font-size:2.5rem;margin-bottom:10px;}
+header p{color:#ffe4d3;font-size:1.1rem;}
+
+.container{max-width:1100px;margin:40px auto;padding:0 20px;}
+
+.packs{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+.card{
+  background:var(--card);
+  border-radius:16px;
+  padding:25px;
+  text-align:center;
+  border:1px solid #334155;
+  transition:transform .2s, border-color .2s;
+}
+.card:hover{
+  transform:translateY(-5px);
+  border-color:var(--accent);
+}
+.card img{width:60px;margin-bottom:15px;}
+.card h3{font-size:1.4rem;margin-bottom:8px;color:var(--accent);}
+.card .price{font-size:1.8rem;font-weight:bold;margin:15px 0;}
+.card p{color:var(--muted);margin-bottom:20px;}
+.btn{
+  display:inline-block;
+  background:var(--accent);
+  color:white;
+  padding:12px 24px;
+  border-radius:8px;
+  text-decoration:none;
+  font-weight:bold;
+  transition:background .2s;
+}
+.btn:hover{background:#ea580c;}
+
+.info{
+  margin-top:60px;
+  background:var(--card);
+  padding:30px;
+  border-radius:16px;
+  text-align:center;
+}
+.info h2{margin-bottom:15px;}
+.info p{color:var(--muted);}
+
+footer{
+  text-align:center;
+  padding:30px 20px;
+  margin-top:50px;
+  color:var(--muted);
+  border-top:1px solid #334155;
+}
